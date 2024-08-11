@@ -48,3 +48,16 @@ lspconfig.lua_ls.setup {
     },
   },
 }
+
+lspconfig.pyright.setup{
+  settings = {
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
+        diagnosticMode = "workspace",  -- 确保此处为 "workspace"
+      }
+    }
+  },
+}
+
